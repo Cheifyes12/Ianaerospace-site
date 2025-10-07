@@ -24,8 +24,9 @@ body {
   
 }
 .main-content h1 {
+  text-align: right;
   color: black;
   font-size: 15px
-  text-align: right;
+ 
 
  }
