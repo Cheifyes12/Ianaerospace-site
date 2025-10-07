@@ -1,17 +1,3 @@
-/* Top navigation bar */
-.top-bar {
-  background-color: #003366; /* Dark blue */
-  height: 80px;
-  width: 100%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
 
 /* Push content below fixed bar */
 .content {
