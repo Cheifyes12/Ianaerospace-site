@@ -1,33 +1,39 @@
-body {
-  background-color: #7BAFD4;
-  font-family: Arial, sans-serif;
+/* Top navigation bar */
+.top-bar {
+  background-color: #003366; /* Dark blue */
+  height: 80px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-h1 {
+/* Push content below fixed bar */
+.content {
+  margin-top: 100px; /* Make sure it's more than .top-bar height */
+}
+
+/* Style for headline below bar */
+.content h1 {
   text-align: center;
   color: darkblue;
 }
-p {
+
+/* Style for paragraph */
+.content p {
   font-size: 32px;
   text-align: center;
   line-height: 1.5;
-  color: orange;
-}
-top-bar {
-  background-color: #003366; /* Dark blue color */
-  height: 80px;              /* Change height as needed */
-  width: 100%;               /* Full width of the page */
-  color: white;              /* Text color inside */
-  display: flex;             /* Optional: for centering */
-  align-items: center;       /* Vertically center content */
-  justify-content: center;   /* Horizontally center content */
-  position: fixed;           /* Optional: keeps it at the top even when scrolling */
-  top: 0;
-  left: 0;
-  z-index: 1000;             /* Makes sure it stays on top */
 }
 
-/* To prevent content from hiding under fixed bar */
+/* Body styling */
 body {
-  margin-top: 80px; /* Equal to .top-bar height */
+  background-color: #7BAFD4;
+  font-family: Arial, sans-serif;
+  margin: 0; /* remove default browser margin */
 }
