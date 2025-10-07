@@ -24,7 +24,14 @@ body {
   
 }
 
-/* Placeholder for future content */
+.top-bar p {
+   color: white;
+   font-size: 15px;
+   text-align: left;
+}
+
+  
+  /* Placeholder for future content */
 .main-content {
   padding: 40px;
 }
