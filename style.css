@@ -7,7 +7,7 @@ body {
 
 /* Top bar at the top of the page */
 .top-bar {
-  background-color: #003366; /* Dark blue */
+  background-color: #13294B; /* Dark blue */
   height: 100px;
   width: 100%;
   display: flex;
@@ -21,13 +21,13 @@ body {
 .top-bar h1 {
   margin: 0;
   font-size: 24px;
-  text-color: orange;
+  text-color: #FF5F05;
   text-align: center;
 }
 
 /* Sidebar directly below the top bar */
 .sidebar {
-  background-color: #023563; /* Same dark blue as top bar */
+  background-color: #FF5F05; /* Same dark blue as top bar */
   width: 200px;
   height: calc(100vh - 100px); /* Fill remaining vertical space */
   display: flex;
