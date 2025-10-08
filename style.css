@@ -21,6 +21,12 @@ body {
   font-size: 35px;
   text-align: center;
   padding-left: 50px;
+
+.main-content {
+  background-color: #003366;
+  height: 100%
+  width: 15%
+  align-items: center;
   
 }
 .main-content h1 {
