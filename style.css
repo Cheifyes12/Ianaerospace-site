@@ -8,7 +8,7 @@ body {
 /* Top bar at the top of the page */
 .top-bar {
   background-color: #003366; /* Dark blue */
-  height: 80px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -21,13 +21,15 @@ body {
 .top-bar h1 {
   margin: 0;
   font-size: 24px;
+  text-color: orange;
+  text-align: center;
 }
 
 /* Sidebar directly below the top bar */
 .sidebar {
-  background-color: #003366; /* Same dark blue as top bar */
+  background-color: #023563; /* Same dark blue as top bar */
   width: 200px;
-  height: calc(100vh - 80px); /* Fill remaining vertical space */
+  height: calc(100vh - 100px); /* Fill remaining vertical space */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -41,6 +43,7 @@ body {
 .sidebar h2 {
   margin: 0;
   font-size: 20px;
+  text-color: orange;
 }
 
 /* Empty main content area (optional placeholder) */
