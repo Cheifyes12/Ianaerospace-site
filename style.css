@@ -1,20 +1,20 @@
-/* Global reset and font */
+/* Reset default spacing and font */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
-/* Top header */
+/* Top bar at the top of the page */
 .top-bar {
-  background-color: #003366;
+  background-color: #003366; /* Dark blue */
   height: 80px;
   width: 100%;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 50px;
+  color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -23,45 +23,29 @@ body {
   font-size: 24px;
 }
 
-/* Layout wrapper: sidebar + content */
-.layout {
-  display: flex;
-  height: calc(100vh - 80px); /* Full height minus header */
-}
-
-/* Sidebar styles */
+/* Sidebar directly below the top bar */
 .sidebar {
-  background-color: #7BAFD4;  /* Solid blue-grey */
+  background-color: #003366; /* Same dark blue as top bar */
   width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Menu inside sidebar */
-.menu {
+  height: calc(100vh - 80px); /* Fill remaining vertical space */
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 60%; /* Adjust to control vertical spacing */
-  width: 100%;
-  text-align: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 80px; /* Right under the top bar */
+  left: 0;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #003366;
+.sidebar h2 {
+  margin: 0;
   font-size: 20px;
-  font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-.menu a:hover {
-  color: #000000;
-}
-
-/* Main content area (empty for now) */
+/* Empty main content area (optional placeholder) */
 .main-content {
-  flex: 1;
+  margin-left: 200px; /* Push it over so it's not under the sidebar */
   padding: 40px;
 }
+
