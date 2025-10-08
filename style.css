@@ -8,7 +8,7 @@ body {
 /* Top bar */
 .top-bar {
   background-color: #13294B;
-  height: 80px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,10 +24,10 @@ body {
 /* Sidebar */
 .sidebar {
   background-color: #FF5F05;
-  width: 200px;
+  width: 150px;
   height: calc(100vh - 80px); /* Full height minus the top bar */
   position: absolute;
-  top: 80px; /* Below the top bar */
+  top: 100px; /* Below the top bar */
   left: 0;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@ body {
 
 /* Main content placeholder */
 .main-content {
-  margin-left: 200px; /* Push away from sidebar */
+  margin-left: 150px; /* Push away from sidebar */
   padding: 40px;
 }
 
