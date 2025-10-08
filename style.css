@@ -1,52 +1,50 @@
-/* Reset default spacing and font */
+/* Reset and base styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
-/* Top bar at the top of the page */
+/* Top bar */
 .top-bar {
-  background-color: #13294B; /* Dark blue */
-  height: 100px;
+  background-color: #13294B;
+  height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 50px;
+  justify-content: center; /* Center the text horizontally */
+  color: #FF5F05;
 }
 
 .top-bar h1 {
   margin: 0;
   font-size: 24px;
-  text-color: #FF5F05;
-  text-align: center;
 }
 
-/* Sidebar directly below the top bar */
+/* Sidebar */
 .sidebar {
-  background-color: #FF5F05; /* Same dark blue as top bar */
+  background-color: #FF5F05;
   width: 200px;
-  height: calc(100vh - 80px); /* Fill remaining vertical space */
+  height: calc(100vh - 80px); /* Full height minus the top bar */
+  position: absolute;
+  top: 80px; /* Below the top bar */
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  color: white;
-  position: absolute;
-  top: 80px; /* Right under the top bar */
-  left: 0;
+  justify-content: space-evenly; /* Vertically center the items with space */
+  color: #13294B;
 }
 
 .sidebar h2 {
   margin: 0;
   font-size: 20px;
-  text-color: #FF5F05;
 }
 
-/* Empty main content area (optional placeholder) */
+/* Main content placeholder */
 .main-content {
-  margin-left: 200px; /* Push it over so it's not under the sidebar */
+  margin-left: 200px; /* Push away from sidebar */
   padding: 40px;
 }
+
 
