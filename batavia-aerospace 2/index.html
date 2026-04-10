@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Batavia Aerospace</title>
+
+<!-- ═══════════════════════════════════════════════
+  GOOGLE ANALYTICS
+  Replace G-XXXXXXXXXX with your real Measurement ID
+  from analytics.google.com → Admin → Data Streams
+  ═══════════════════════════════════════════════ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@200;300;400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="nav-bar">
+  <a href="#hero" class="nav-logo">
+    <img src="assets/images/logo-patch.png" alt="Batavia Aerospace"/>
+    <span class="nav-logo-text">BATAVIA <em>AEROSPACE</em></span>
+  </a>
+  <ul>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#rocketry">Rocketry</a></li>
+    <li><a href="#aviation">Aviation</a></li>
+    <li><a href="#updates">Updates</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#join">Join</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-photo" id="hero-photo"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-scan"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Student-Led Engineering Team — Batavia, IL</div>
+    <h1 class="hero-h1">BATAVIA<span class="line2">AEROSPACE</span></h1>
+    <p class="hero-sub" id="hero-sub"></p>
+    <div class="hero-ctas">
+      <a href="#programs" class="btn-primary">Our Programs</a>
+      <a href="#join" class="btn-outline">Join the Team</a>
+      <a id="donate-btn-hero" href="#" target="_blank" class="btn-donate">♥ Donate</a>
+    </div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ══ SOCIAL BAR ══ -->
+<div class="social-bar">
+  <span class="social-bar-label">Follow Us</span>
+  <div class="social-links" id="social-links">
+    <!-- Injected by JS -->
+  </div>
+  <a id="donate-hcb-bar" href="#" target="_blank" class="donate-link">
+    <img src="assets/images/hcb-logo.png" alt="HCB"/>
+    Donate via HCB
+  </a>
+</div>
+
+<hr class="divider"/>
+
+<!-- ══ PROGRAMS ══ -->
+<section id="programs">
+  <div class="section-eyebrow">What We Do</div>
+  <div class="section-title">Programs</div>
+  <div class="programs-grid">
+    <div class="program-card fade-up">
+      <div class="prog-img" style="background-image:url('assets/images/rocketry/g7-pad-1.png')"></div>
+      <div class="prog-overlay"></div>
+      <div class="prog-tag">Program 01</div>
+      <h3>High Power Rocketry</h3>
+      <p>Designing and flying high-performance rockets — from Level 1 certifications to Level 2 launches on J and L-class motors.</p>
+      <a href="#rocketry" class="prog-link">View Projects</a>
+    </div>
+    <div class="program-card fade-up">
+      <div class="prog-img" style="background-image:url('assets/images/aviation/aeroscout-table.png');background-position:center;"></div>
+      <div class="prog-overlay"></div>
+      <div class="prog-tag">Program 02</div>
+      <h3>RC Aircraft</h3>
+      <p>Building and flying sophisticated remotely controlled aircraft — from trainer planes to scratch-built designs.</p>
+      <a href="#aviation" class="prog-link">View Projects</a>
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ ROCKETRY PROJECTS ══ (rendered from rocketry-projects.json) -->
+<section id="rocketry">
+  <div class="section-eyebrow">Program 01</div>
+  <div class="section-title">High Power Rocketry</div>
+  <div class="projects-list" id="rocketry-projects">
+    <div class="loading-msg">Loading projects...</div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ RC AVIATION ══ (rendered from aviation.json) -->
+<section id="aviation">
+  <div class="section-eyebrow">Program 02</div>
+  <div class="section-title">RC Aircraft</div>
+  <div id="aviation-content">
+    <div class="loading-msg">Loading...</div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ UPDATES ══ (rendered from updates.json) -->
+<!--
+  ════════════════════════════════════════════════════════
+  TO ADD/EDIT UPDATES: edit  content/updates.json
+  Copy this template and add to the TOP of the array:
+  {
+    "date":        "DAY, Month DD, YYYY",
+    "title":       "Your Update Title",
+    "description": "Your update description text here."
+  }
+  ════════════════════════════════════════════════════════
+-->
+<section id="updates">
+  <div class="section-eyebrow">Latest News</div>
+  <div class="section-title">Updates</div>
+  <div class="updates-list" id="updates-list">
+    <div class="loading-msg">Loading updates...</div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ ABOUT ══ -->
+<section id="about">
+  <div class="fade-up">
+    <img class="about-img" id="about-img" src="assets/images/rocketry/team-field.png" alt="Batavia Aerospace Team"/>
+  </div>
+  <div class="about-text">
+    <div class="section-eyebrow">Who We Are</div>
+    <div class="section-title">Built on<br/>Engineering</div>
+    <p>Batavia Aerospace is a non-profit engineering team dedicated to building high-performance flight systems. We're student-led, driven by curiosity, and committed to doing real engineering — not just theory.</p>
+    <p>From our first Level 1 rocket to a near-Mach fiberglass Level 2 vehicle, every project pushes the team further in design, manufacturing, and flight operations.</p>
+    <div class="stat-row" id="stat-row">
+      <!-- injected by JS from config.json -->
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ TEAM ══ (rendered from team.json) -->
+<section id="team">
+  <div class="section-eyebrow">The People</div>
+  <div class="section-title">Our Team</div>
+  <div class="team-grid" id="team-grid">
+    <div class="loading-msg">Loading team...</div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ CERTIFICATIONS ══ (rendered from certifications.json) -->
+<section id="certifications">
+  <div class="section-eyebrow">Achievements</div>
+  <div class="section-title">Certifications</div>
+  <div class="certs-grid" id="certs-grid">
+    <div class="loading-msg">Loading...</div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- ══ HCB FISCAL SPONSORSHIP ══ -->
+<div class="hcb-bar">
+  <img src="assets/images/hcb-logo.png" alt="HCB logo"/>
+  <p class="hcb-text">
+    Batavia Aerospace is fiscally sponsored by
+    <a href="https://hackclub.com/hcb" target="_blank">The Hack Foundation (d.b.a. Hack Club)</a>,
+    a 501(c)(3) nonprofit (EIN: 81-2908499).
+    <br/>Donations are tax-deductible.
+    <a id="hcb-donate-link" href="#" target="_blank">Support us via HCB →</a>
+  </p>
+</div>
+
+<!-- ══ JOIN ══ -->
+<section id="join">
+  <div class="join-glow"></div>
+  <div class="section-eyebrow">Get Involved</div>
+  <div class="section-title">Soar with<br/>Batavia Aerospace</div>
+  <p class="join-desc">We focus on high-impact projects — sophisticated RC aircraft and high-powered rockets. Members gain real hands-on aerospace engineering experience from day one.</p>
+  <div class="join-bullets" id="join-bullets">
+    <!-- injected from config.json -->
+  </div>
+  <div class="join-cta">
+    <p class="join-note">// Membership offered through selection process</p>
+    <div class="email-block">
+      <span class="email-label">// Contact</span>
+      <a id="contact-email" href="#" class="email-addr"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-logo-wrap">
+    <img src="assets/images/logo-patch.png" alt="Logo"/>
+    <div class="footer-logo">BATAVIA <span>AEROSPACE</span></div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#rocketry">Rocketry</a></li>
+    <li><a href="#aviation">Aviation</a></li>
+    <li><a href="#updates">Updates</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#join">Join</a></li>
+  </ul>
+  <div class="footer-note">© 2026 Batavia Aerospace · Non-Profit · Build · Launch · Fly</div>
+</footer>
+
+<script src="scripts/render.js"></script>
+</body>
+</html>

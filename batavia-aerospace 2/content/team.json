@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ian Larson",
+    "role": "Project Co-Founder",
+    "subrole": "High-Power Rocketry Program Lead",
+    "photo": "assets/images/team/ian-larson.png"
+  },
+  {
+    "name": "Kellen Fukumoto",
+    "role": "Project Co-Founder",
+    "subrole": "RC Aircraft Program Lead",
+    "photo": "assets/images/team/kellen-fukumoto.png"
+  },
+  {
+    "name": "Matteo Marotta",
+    "role": "Project Co-Founder",
+    "subrole": "Software Systems Lead",
+    "photo": "assets/images/team/matteo-marotta.png"
+  }
+]

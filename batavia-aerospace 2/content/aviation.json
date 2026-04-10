@@ -1,0 +1,49 @@
+{
+  "description": "The RC Aircraft Program showcases hands-on projects ranging from concept and design, to fabrication, testing, and flight. Projects highlight skills in aerodynamics, structures, propulsion, avionics, and control systems — with an emphasis on iterative engineering and real-world performance.",
+  "aircraft": [
+    {
+      "name": "Aeroscout S 2 1.1m",
+      "status": "active",
+      "statusLabel": "Active",
+      "description": "The first official trainer plane used by this club to help participants learn how to fly — a stable, beginner-friendly platform for building fundamental RC piloting skills.",
+      "image": "assets/images/aviation/aeroscout-field.png",
+      "meta": [
+        { "label": "Type",     "value": "Trainer / Fixed Wing" },
+        { "label": "Wingspan", "value": "1.1m" }
+      ]
+    },
+    {
+      "name": "Flight Simulator",
+      "status": "active",
+      "statusLabel": "Active",
+      "description": "The newest addition to the RC Aircraft Program is the RealFlight Evolution RC Flight Simulator, paired with the Spektrum NX8+ transmitter. These tools allow the team to fly over 300 different RC planes, gliders, and drones indoors — enabling safe experimentation and year-round training regardless of weather.",
+      "image": "assets/images/aviation/simulator-nx8.png",
+      "meta": [
+        { "label": "Simulator",       "value": "RealFlight Evolution" },
+        { "label": "Transmitter",     "value": "Spektrum NX8+" },
+        { "label": "Aircraft Library","value": "300+ models" },
+        { "label": "Purpose",         "value": "Training & R&D" }
+      ]
+    }
+  ],
+  "goals": [
+    {
+      "status": "planned",
+      "statusLabel": "Planned",
+      "title": "First Scratch Build",
+      "description": "A project focused on designing and constructing our first RC airplane from complete scratch — pushing the team into full design ownership from airframe to electronics."
+    },
+    {
+      "status": "planned",
+      "statusLabel": "Planned",
+      "title": "Join Fox Valley AMA Flight Club",
+      "description": "Connect with fellow RC aviation enthusiasts by becoming members of the Fox Valley AMA Flight Club — gaining access to flying sites, mentorship, and the broader RC community."
+    },
+    {
+      "status": "planned",
+      "statusLabel": "Planned",
+      "title": "Attend Flite Fest 2026",
+      "description": "Gain experience and knowledge by attending one of the largest RC aviation gatherings in the country — connecting with builders, pilots, and innovators from across the hobby."
+    }
+  ]
+}
